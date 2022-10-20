@@ -15,6 +15,7 @@ pod 'Kingfisher'
 pod 'ImageSlideshow'
 pod "ImageSlideshow/Kingfisher"
 pod 'Cosmos', '~> 23.0'
+pod 'NVActivityIndicatorView'
 
 end
 

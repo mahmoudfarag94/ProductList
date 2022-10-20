@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photo List View Controller-->
+        <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="PhotoListViewController" id="BYZ-38-t0r" customClass="PhotoListViewController" customModule="ProductListRepo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" id="BYZ-38-t0r" customClass="ListViewController" customModule="ProductListRepo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="lbV-Ip-YPJ"/>
                     <connections>
-                        <outlet property="photoListTblView" destination="2P3-4m-IWF" id="N3I-fy-Asz"/>
+                        <outlet property="ListTblView" destination="2P3-4m-IWF" id="pKK-1e-Mcj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,16 +69,16 @@
                                                         <rect key="frame" x="0.0" y="56" width="394" height="45"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Im-gA-yGV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="66" height="45"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="56" height="45"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRu-zy-TA9">
-                                                                        <rect key="frame" x="8" y="8" width="50" height="29"/>
+                                                                        <rect key="frame" x="8" y="8" width="40" height="29"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XN-20-WUS" customClass="CosmosView" customModule="Cosmos">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="29"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="29"/>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="width" constant="50" id="LKZ-px-v4J"/>
+                                                                                    <constraint firstAttribute="width" constant="40" id="LKZ-px-v4J"/>
                                                                                 </constraints>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">

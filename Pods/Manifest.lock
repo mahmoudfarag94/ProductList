@@ -8,6 +8,9 @@ PODS:
     - ImageSlideshow/Core
     - Kingfisher (> 3.0)
   - Kingfisher (7.4.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -21,6 +24,7 @@ DEPENDENCIES:
   - ImageSlideshow
   - ImageSlideshow/Kingfisher
   - Kingfisher
+  - NVActivityIndicatorView
   - RxCocoa
   - RxSwift
 
@@ -30,6 +34,7 @@ SPEC REPOS:
     - Cosmos
     - ImageSlideshow
     - Kingfisher
+    - NVActivityIndicatorView
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -39,10 +44,11 @@ SPEC CHECKSUMS:
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
   Kingfisher: 596b207973051aae5e4c54a1c1cb39837ea10d36
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: e9a0ec336754d8ef0120f336a87308498358c73b
+PODFILE CHECKSUM: 354839443c19fef79bcfdf5015a3bf178e7687e0
 
 COCOAPODS: 1.11.3

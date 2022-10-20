@@ -13,9 +13,9 @@ import RxSwift
 import ImageSlideshow
 import Kingfisher
 
-class PhotoListViewController: BaseViewController<PhotoListViewModel> {
+class ListViewController: BaseViewController<ListViewModel> {
 
-    @IBOutlet weak var photoListTblView: UITableView!
+    @IBOutlet weak var ListTblView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,25 +26,25 @@ class PhotoListViewController: BaseViewController<PhotoListViewModel> {
     }
     
     func setupTableView(){
-        photoListTblView.estimatedRowHeight = 152
-        photoListTblView.rowHeight = UITableView.automaticDimension
-        photoListTblView.delegate = nil
-        photoListTblView.dataSource = nil
-        photoListTblView.registerCell(type: PhotoTableViewCell.self)
+        ListTblView.estimatedRowHeight = 152
+        ListTblView.rowHeight = UITableView.automaticDimension
+        ListTblView.delegate = nil
+        ListTblView.dataSource = nil
+        ListTblView.registerCell(type: PhotoTableViewCell.self)
     }
     
     override func bindViewModel(){
-        viewModel = PhotoListViewModel(useCase: PhotoListUseCase())
+        viewModel = ListViewModel(useCase: PhotoListUseCase())
         guard let viewModel = viewModel else {return}
-        viewModel.photos
-            .bind(to: photoListTblView.rx.items(cellIdentifier: PhotoTableViewCell.identifire, cellType: PhotoTableViewCell.self)) { (row, photo, cell) in
+        viewModel.products
+            .bind(to: ListTblView.rx.items(cellIdentifier: PhotoTableViewCell.identifire, cellType: PhotoTableViewCell.self)) { (row, photo, cell) in
                 cell.setCellData(model: photo)
         }.disposed(by: disposeBag)
     }
     
     func bintToTableView(){
         
-        photoListTblView.rx.modelSelected(ProductListResponseModel.self).subscribe(onNext: {(model) in
+        ListTblView.rx.modelSelected(ProductListResponseModel.self).subscribe(onNext: {(model) in
             let detailvc  = ProductDetailsViewController.getDetailInstance(item: model)
             self.navigationController?.pushViewController(detailvc, animated: true)
         }).disposed(by: disposeBag)

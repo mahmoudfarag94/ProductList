@@ -10,17 +10,10 @@ import RxSwift
 import RxCocoa
 import RxRelay
 
-class PhotoListViewModel: BaseViewModel{
+class ListViewModel: BaseViewModel{
 
     var useCase: PhotoAPIType?
-    let photos = BehaviorRelay<[ProductListResponseModel]>(value: [])
-    var loadMoreRelay = BehaviorRelay<Bool>(value: false)
-    
-    private var arr = [ProductListResponseModel](){
-        didSet{
-            photos.accept(arr)
-        }
-    }
+    let products = BehaviorRelay<[ProductListResponseModel]>(value: [])
     
     init(useCase: PhotoAPIType) {
         super.init()
@@ -29,14 +22,14 @@ class PhotoListViewModel: BaseViewModel{
     }
     
     func getData(){
-        self.loadMoreRelay.accept(true)
+        loadingRelay.accept(true)
         useCase?.getPhotosList(){[weak self] (model, error)  in
             if error != nil {
                 print(error?.localizedDescription ?? "")
             }else{
-                self?.arr.append(contentsOf: model ?? [])
-                self?.loadMoreRelay.accept(false)
+                self?.products.accept(model ?? [])
             }
+            self?.loadingRelay.accept(false)
         }
     }
 }
