@@ -28,6 +28,7 @@
 		391FAF3629018AAF0012CBF9 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391FAF3529018AAF0012CBF9 /* ProductDetailsViewController.swift */; };
 		391FAF3829018EEB0012CBF9 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391FAF3729018EEB0012CBF9 /* StoryboardNames.swift */; };
 		391FAF3F290193470012CBF9 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391FAF3E290193470012CBF9 /* ProductDetailViewModel.swift */; };
+		391FAF412901C5670012CBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 391FAF402901C5670012CBF9 /* README.md */; };
 		EE45C1F4E87C974FB793D269 /* Pods_ProductListRepo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CAD46F01A62D1EA88822B5 /* Pods_ProductListRepo.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		391FAF3529018AAF0012CBF9 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		391FAF3729018EEB0012CBF9 /* StoryboardNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 		391FAF3E290193470012CBF9 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		391FAF402901C5670012CBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		62CAD46F01A62D1EA88822B5 /* Pods_ProductListRepo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductListRepo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 		391FAEF9290175370012CBF9 /* ProductListRepo */ = {
 			isa = PBXGroup;
 			children = (
+				391FAF402901C5670012CBF9 /* README.md */,
 				391FAF1C2901762E0012CBF9 /* Base */,
 				391FAF39290193020012CBF9 /* Sceens */,
 				391FAF1F2901762E0012CBF9 /* Utilities */,
@@ -318,6 +321,7 @@
 			files = (
 				391FAF2A2901762E0012CBF9 /* PhotoTableViewCell.xib in Resources */,
 				391FAF2B2901762E0012CBF9 /* Main.storyboard in Resources */,
+				391FAF412901C5670012CBF9 /* README.md in Resources */,
 				391FAF072901753A0012CBF9 /* LaunchScreen.storyboard in Resources */,
 				391FAF042901753A0012CBF9 /* Assets.xcassets in Resources */,
 			);
